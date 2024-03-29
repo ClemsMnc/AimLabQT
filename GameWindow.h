@@ -20,7 +20,7 @@ public:
 
     void setButtonInterval(int interval);
     void setGameTime(int time);
-    void initializeGame(); // S'assurer que cette méthode est déclarée
+    void initializeGame(); 
 
 private slots:
     void updateGame();
@@ -34,11 +34,11 @@ private:
     QTimer *buttonTimer;
     QPushButton *targetButton;
     int score = 0;
-    int timeLeft = 60; // Temps total de jeu en secondes
-    int buttonInterval; // Ajouter cette ligne pour déclarer buttonInterval
+    int timeLeft = 60;
+    int buttonInterval; 
     QSoundEffect clickSoundEffect;
     QSoundEffect missSoundEffect;
-    QSoundEffect endSoundEffect; // Assurez-vous d'avoir cette variable pour le son de fin
+    QSoundEffect endSoundEffect;
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;

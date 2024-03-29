@@ -39,7 +39,6 @@
     <string>Score: 0</string>
    </property>
   </widget>
-  <!-- Ici, vous devrez ajouter votre logique pour les boutons dynamiques dans le code C++ -->
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

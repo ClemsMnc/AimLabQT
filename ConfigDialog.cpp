@@ -1,21 +1,18 @@
 #include "ConfigDialog.h"
 
 ConfigDialog::ConfigDialog(QWidget *parent) : QDialog(parent) {
-    // Création des SpinBoxes pour les paramètres
     delayBetweenTargetsSpinBox = new QSpinBox(this);
     delayBetweenTargetsSpinBox->setRange(100, 5000);
-    delayBetweenTargetsSpinBox->setValue(1000); // Valeur par défaut
+    delayBetweenTargetsSpinBox->setValue(1000); 
 
     gameTimeSpinBox = new QSpinBox(this);
     gameTimeSpinBox->setRange(10, 300);
-    gameTimeSpinBox->setValue(60); // Valeur par défaut
+    gameTimeSpinBox->setValue(60); 
 
-    // Bouton OK et Cancel
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 
-    // Layout
     QFormLayout *layout = new QFormLayout(this);
     layout->addRow("Délai entre les cibles (ms):", delayBetweenTargetsSpinBox);
     layout->addRow("Durée de jeu (secondes):", gameTimeSpinBox);
