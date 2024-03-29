@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Accueil AimLab</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget { background-color: #f0f0f0; }</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Nombre d'apparitions par minute :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #333333;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="appearancesPerMinute">
+      <property name="maximum">
+       <number>60</number>
+      </property>
+      <property name="suffix">
+       <string> app/min</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSpinBox { color: #0055ff; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="startButton">
+      <property name="text">
+       <string>Démarrer</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: #00cc44; color: white; border-radius: 5px; }</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
