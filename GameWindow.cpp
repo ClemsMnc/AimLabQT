@@ -51,7 +51,7 @@ void GameWindow::buttonClicked() {
 }
 
 void GameWindow::mousePressEvent(QMouseEvent *event) {
-    QWidget::mousePressEvent(event); standard
+    QWidget::mousePressEvent(event); 
 
     if (!targetButton->geometry().contains(event->pos()) && !targetButton->isHidden()) {
         missSoundEffect.play(); 
